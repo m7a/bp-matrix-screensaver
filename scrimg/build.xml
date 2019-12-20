@@ -2,7 +2,7 @@
 <project default="build">
 
 <!-- APPLICATION METADATA -->
-<property name="masysma.target" value="matrix_screensaver_img"/> 
+<property name="masysma.target" value="matrix-screensaver-img"/> 
 <property name="masysma.main"   value="MatrixScreensaverImage"/> 
 
 <!-- CONSTANT TPL IMPORT -->

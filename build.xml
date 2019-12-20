@@ -9,7 +9,7 @@
 <property name="mdpc.depends" value="default-jre"/>
 <property name="mdpc.descrl">
  This package provides a basic Matrix-style screensaver which can be stopped
- by pressing enter. Additionally, script `matrix_screensaver_img` allows
+ by pressing Enter. Additionally, script `matrix_screensaver_img` allows
  images of this style to be generated e.g. for use as background images.
  .
  Note that all of these programs have been designed to run on just one
@@ -17,8 +17,8 @@
 </property>
 
 <property name="mdpc.file.install">
-scr11/matrix_screensaver.jar /usr/share/java
-scrimg/matrix_screensaver_img.jar /usr/share/java
+scr11/matrix-screensaver.jar /usr/share/java
+scrimg/matrix-screensaver-img.jar /usr/share/java
 scr11/matrix_screensaver /usr/bin
 scrimg/matrix_screensaver_img /usr/bin
 </property>

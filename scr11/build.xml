@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="build">
 
-<property name="masysma.target" value="matrix_screensaver"/> 
+<property name="masysma.target" value="matrix-screensaver"/> 
 <property name="masysma.main"   value="ma.matrix.MatrixScreensaver"/>
 
 <!-- CONSTANT TPL IMPORT -->
