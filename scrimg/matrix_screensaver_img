@@ -1,0 +1,2 @@
+#!/bin/sh -e
+exec java -jar /usr/share/java/matrix_screensaver_img.jar "$@" # 2019 Ma_Sys.ma
