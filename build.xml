@@ -23,33 +23,15 @@ scr11/matrix_screensaver /usr/bin
 scrimg/matrix_screensaver_img /usr/bin
 </property>
 
-<!-- PART OF TPL HERE FOR USE IN BUILD -->
-<property environment="env"/>
-<condition property="masysma.internal.includepath.rel" value="${env.MDVL_CI_PHOENIX_ROOT}" else=".."><isset property="env.MDVL_CI_PHOENIX_ROOT"/></condition>
-<property name="masysma.internal.includepath" location="${masysma.internal.includepath.rel}"/>
-
-<!-- SPECIFIC BUILD TODO THIS IS RECURSIVE ANT SHOULD BE SUPPORTED IN TEMPLATE! -->
-<target name="build">
-	<ant dir="scr11" target="jar"/>
-	<ant dir="scrimg" target="jar"/>
-</target>
-
-<target name="clean">
-	<ant dir="scr11" target="clean"/>
-	<ant dir="scrimg" target="clean"/>
-</target>
-
-<target name="dist-clean" depends="clean">
-	<ant dir="scr11" target="dist-clean"/>
-	<ant dir="scrimg" target="dist-clean"/>
-</target>
-
 <!-- CI INTEGRATION -->
 <target name="package_triggered" depends="package">
 	<property name="masysma.ci.trigger" value="newver"/>
 </target>
 
-<!-- TPL IMPORT (PARTIALLY GIVEN ABOVE) -->
+<!-- CONST TPL IMPORT -->
+<property environment="env"/>
+<condition property="masysma.internal.includepath.rel" value="${env.MDVL_CI_PHOENIX_ROOT}" else=".."><isset property="env.MDVL_CI_PHOENIX_ROOT"/></condition>
+<property name="masysma.internal.includepath" location="${masysma.internal.includepath.rel}"/>
 <property name="masysma.internal.loadpath" value="${masysma.internal.includepath}/co-build/ant-build-template.xml"/>
 <condition property="masysma.internal.load" value="file://${masysma.internal.loadpath}" else="https://raw.githubusercontent.com/m7a/co-build/master/ant-build-template.xml"><resourceexists><file file="${masysma.internal.loadpath}"/></resourceexists></condition>
 <import><url url="${masysma.internal.load}"/></import>
