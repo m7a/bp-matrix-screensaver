@@ -7,6 +7,7 @@ keywords: ["matrix", "screensaver", "mdvl-matrix-screensaver", "resolution"]
 date: 2019/12/21 00:31:23
 lang: en-US
 x-masysma-repository: https://www.github.com/m7a/bp-matrix-screensaver
+x-masysma-website: https://masysma.lima-city.de/32/matrix_screensaver.xhtml
 x-masysma-owned: 1
 x-masysma-copyright: |
   Copyright (c) 2009, 2014, 2019 Ma_Sys.ma.
