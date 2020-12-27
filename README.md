@@ -29,7 +29,7 @@ as a quick 2D graphics test. The code contains use for some advanced Java
 features: Making a screenshot of the current display and changing the monitor's
 resolution.
 
-See also: `cmatrix(1)`
+See also: [cmatrix(1)](https://manpages.debian.org/buster/cmatrix/cmatrix.1.en.html)
 
 Invocation
 ==========
